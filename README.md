@@ -42,3 +42,42 @@ curl "http://localhost:8080/search?query=func+main&repo=myrepo"
 ```
 
 Results are scored by match density: shorter lines where the query covers more of the content score higher (range 0–1).
+
+## Setup (before the interview)
+
+The starter repository is at [github.com/sourcegraph/interview-search-starter](https://github.com/sourcegraph/interview-search-starter).
+
+### 1. Clone the starter repo and set up the workspace
+
+```bash
+mkdir -p ~/interview-search/repos
+git clone https://github.com/sourcegraph/interview-search-starter.git ~/interview-search/interview-search-starter
+```
+
+### 2. Clone OSS repositories to search against
+
+These are a mix of languages and sizes:
+
+```bash
+cd ~/interview-search/repos
+git clone https://github.com/go-chi/chi               # Go - HTTP router
+git clone https://github.com/pallets/flask            # Python - web framework
+git clone https://github.com/expressjs/express        # JavaScript - web framework
+git clone https://github.com/serde-rs/serde           # Rust - serialization
+git clone https://github.com/jqlang/jq                # C - JSON processor
+```
+
+### 3. Start the server
+
+```bash
+cd ~/interview-search/interview-search-starter
+go run main.go --root ~/interview-search/repos --port 8080
+```
+
+### 4. Verify it works
+
+```bash
+curl 'http://localhost:8080/search?query=func+main&repo=chi'
+```
+
+Or open http://localhost:8080/ in a browser to use the web UI.
