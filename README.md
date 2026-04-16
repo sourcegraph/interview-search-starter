@@ -5,12 +5,12 @@ A minimal Go HTTP service that searches a single Git repository using `git grep`
 ## Usage
 
 ```bash
-go run main.go --root ~/src --port 8080
+go run main.go --root ~/src --port 48080
 ```
 
 **Flags:**
 - `--root` — Directory containing Git repositories (default: `.`)
-- `--port` — Port to listen on (default: `8080`)
+- `--port` — Port to listen on (default: `48080`)
 
 ## API
 
@@ -25,7 +25,7 @@ Search a single repository.
 **Example:**
 
 ```bash
-curl "http://localhost:8080/search?query=func+main&repo=myrepo"
+curl "http://localhost:48080/search?query=func+main&repo=myrepo"
 ```
 
 **Response:**
@@ -71,13 +71,13 @@ git clone https://github.com/jqlang/jq                # C - JSON processor
 
 ```bash
 cd ~/interview-search/interview-search-starter
-go run main.go --root ~/interview-search/repos --port 8080
+go run main.go --root ~/interview-search/repos --port 48080
 ```
 
 ### 4. Verify it works
 
 ```bash
-curl 'http://localhost:8080/search?query=func+main&repo=chi'
+curl 'http://localhost:48080/search?query=func+main&repo=chi'
 ```
 
-Or open http://localhost:8080/ in a browser to use the web UI.
+Or open http://localhost:48080/ in a browser to use the web UI.

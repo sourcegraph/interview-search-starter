@@ -24,7 +24,7 @@ var rootDir string
 
 func main() {
 	flag.StringVar(&rootDir, "root", ".", "Root directory containing git repositories")
-	port := flag.Int("port", 8080, "Port to listen on")
+	port := flag.Int("port", 48080, "Port to listen on")
 	flag.Parse()
 
 	var err error
