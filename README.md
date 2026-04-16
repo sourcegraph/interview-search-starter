@@ -45,8 +45,6 @@ Results are scored by match density: shorter lines where the query covers more o
 
 ## Setup (before the interview)
 
-The starter repository is at [github.com/sourcegraph/interview-search-starter](https://github.com/sourcegraph/interview-search-starter).
-
 ### 1. Clone the starter repo and set up the workspace
 
 ```bash
