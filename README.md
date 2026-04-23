@@ -4,7 +4,7 @@ A minimal Go HTTP service that searches a single Git repository using `git grep`
 
 It is the starting point for a coding exercise interview in which the candidate will build out features on top of this service.
 
-The candidate is required to use an agentic coding assistant (Claude Code, Amp, Cursor, Codex, etc...) during the itnerview.
+The candidate is required to use an agentic coding assistant (Claude Code, Amp, Cursor, Codex, etc...) during the interview.
 
 ## Usage
 
