@@ -2,6 +2,10 @@
 
 A minimal Go HTTP service that searches a single Git repository using `git grep`.
 
+It is the starting point for a coding exercise interview in which the candidate will build out features on top of this service.
+
+The candidate is required to use an agentic coding assistant (Claude Code, Amp, Cursor, Codex, etc...) during the interview.
+
 ## Usage
 
 ```bash
@@ -79,3 +83,7 @@ curl 'http://localhost:48080/search?query=func+main&repo=chi'
 ```
 
 Or open http://localhost:48080/ in a browser to use the web UI.
+
+### 5. Ensure your coding assistant is ready to go
+
+This exercise requires an agentic coding assistant (Claude Code, Amp, Cursor, Codex, etc.), so get yours ready to go with this repo prior to the interview.
