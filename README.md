@@ -86,4 +86,4 @@ Or open http://localhost:48080/ in a browser to use the web UI.
 
 ### 5. Ensure your coding assistant is ready to go
 
-This exercise requires an agentic coding assistant (Claude Code, Amp, Cursor, Codex, etc...), so get yours ready to go with this repo.
+This exercise requires an agentic coding assistant (Claude Code, Amp, Cursor, Codex, etc.), so get yours ready to go with this repo prior to the interview.
