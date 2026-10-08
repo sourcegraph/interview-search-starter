@@ -61,12 +61,15 @@ git clone https://github.com/sourcegraph/interview-search-starter.git ~/intervie
 These are a mix of languages and sizes:
 
 ```bash
+sh <<'EOF'
+set -e
 cd ~/interview-search/repos
-git clone https://github.com/go-chi/chi               # Go - HTTP router
-git clone https://github.com/pallets/flask            # Python - web framework
-git clone https://github.com/expressjs/express        # JavaScript - web framework
-git clone https://github.com/serde-rs/serde           # Rust - serialization
-git clone https://github.com/jqlang/jq                # C - JSON processor
+git clone https://github.com/go-chi/chi          # Go - HTTP router
+git clone https://github.com/pallets/flask       # Python - web framework
+git clone https://github.com/expressjs/express   # JavaScript - web framework
+git clone https://github.com/serde-rs/serde      # Rust - serialization
+git clone https://github.com/jqlang/jq           # C - JSON processor
+EOF
 ```
 
 ### 3. Start the server
